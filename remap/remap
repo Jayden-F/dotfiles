@@ -1,2 +1,4 @@
-setxkbmap -option caps:hyper
-xcape -e 'Hyper_L=Escape'
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    setxkbmap -option caps:hyper
+    xcape -e 'Hyper_L=Escape'
+fi
