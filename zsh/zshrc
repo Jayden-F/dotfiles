@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export "PATH=/home/jayden/repos/scripts:$PATH"
-
+source /home/jayden/repos/dotfiles/remap/remap
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/jayden/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

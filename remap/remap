@@ -1,0 +1,2 @@
+setxkbmap -option caps:hyper
+xcape -e 'Hyper_L=Escape'
