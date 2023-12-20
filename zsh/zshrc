@@ -116,3 +116,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 source $DOTFILES/setup.sh
 export PATH="$DOTFILES/scripts:$PATH"
+alias vim="nvim"
+
