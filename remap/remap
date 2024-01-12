@@ -4,3 +4,4 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 fi
 
 bindkey -s ^f "tmux-sessionizer\n"
+xset r rate 300 50
