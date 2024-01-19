@@ -6,6 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export "REPOS=$HOME/repos"
 export "DOTFILES=$REPOS/dotfiles"
 export PATH="$DOTFILES/scripts:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -124,7 +125,6 @@ source ~/.cargo/env
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     export LDFLAGS="-L$/usr/local/opt/llvm/lib/c++ -Wl,-rpath,$/usr/local/opt/llvm/lib/c++"
-
     export PATH="/usr/local/opt/llvm/bin:$PATH"
     export CC="/usr/local/opt/llvm/bin/clang"
     export CXX="/usr/local/opt/llvm/bin/clang++"
