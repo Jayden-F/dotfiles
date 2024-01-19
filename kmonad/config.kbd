@@ -17,16 +17,16 @@
     shift_control (around lsft lctl)
     alt_meta (around lalt lmet)
     hyper (around @shift_control @alt_meta)
-    h_caps (tap-hold 150 esc @hyper)
+    h_caps (tap-hold 250 esc @hyper)
 
-    h_a (tap-hold 150 a lctl)
-    h_s (tap-hold 150 s lalt)
+    h_a (tap-hold 250 a lctl)
+    h_s (tap-hold 250 s lalt)
 
-    h_f (tap-hold 150 f lmet)
-    h_j (tap-hold 150 j lmet)
-    h_l (tap-hold 150 l ralt)
+    h_f (tap-hold 250 f lmet)
+    h_j (tap-hold 250 j lmet)
+    h_l (tap-hold 250 l ralt)
 
-    h_; (tap-hold 150 ; rctl)
+    h_; (tap-hold 250 ; rctl)
 
 )
 
