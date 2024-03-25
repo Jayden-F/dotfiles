@@ -3,10 +3,9 @@ normal                = { family = "FiraCode Nerd Font", style = "Retina" }
 bold                  = { family = "FiraCode Nerd Font", style = "Bold" }
 italic                = { family = "FiraCode Nerd Font", style = "Italic" }
 bold_italic           = { family = "FiraCode Nerd Font", style = "Bold Italic" }
-size                  = 11.25
+size                  = 12
 offset                = { x = 0, y = 0 }
 glyph_offset          = { x = 0, y = 0 }
-#builtin_box_drawing   = true
 
 [cursor.vi_mode_style]
 shape                 = "Block"
@@ -18,3 +17,4 @@ blinking              = "Off"
 
 [window]
 opacity =  0.90
+padding = { x = 5, y = 3 }
