@@ -105,11 +105,3 @@ bindkey -M vicmd "j" down-line-or-beginning-search
 
 alias vim="nvim"
 source ~/.cargo/env
-
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    export LDFLAGS="-L$/usr/local/opt/llvm/lib/c++ -Wl,-rpath,$/usr/local/opt/llvm/lib/c++"
-    export PATH="/usr/local/opt/llvm/bin:$PATH"
-    export CC="/usr/local/opt/llvm/bin/clang"
-    export CXX="/usr/local/opt/llvm/bin/clang++"
-fi
