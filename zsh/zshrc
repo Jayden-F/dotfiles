@@ -104,4 +104,3 @@ bindkey -M vicmd "j" down-line-or-beginning-search
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vim="nvim"
-source ~/.cargo/env
