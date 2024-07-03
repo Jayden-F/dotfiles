@@ -1,5 +1,5 @@
 [env]
-term = "xterm-256color"
+term = "screen-256color"
 
 [font]
 normal = { family = "FiraCode Nerd Font Mono", style = "Retina" }
@@ -20,4 +20,4 @@ shape = "Block"
 blinking = "Off"
 
 [window]
-opacity = 0.85
+opacity = 0.75
