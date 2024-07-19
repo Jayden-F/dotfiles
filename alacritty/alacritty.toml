@@ -20,4 +20,4 @@ shape = "Block"
 blinking = "Off"
 
 [window]
-opacity = 0.75
+opacity = 0.90
