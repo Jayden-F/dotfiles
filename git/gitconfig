@@ -3,3 +3,9 @@
 	email = jaydenjfilippi@gmail.com
 [core]
 	editor = nvim
+[alias]
+	co = checkout
+	cc = commit
+	st = status
+	lg = log --graph
+    suir = submodule update --init --recursive
