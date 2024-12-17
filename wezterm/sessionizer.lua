@@ -3,12 +3,9 @@ local act = wezterm.action
 
 local M = {}
 
-local fd = "/usr/local/bin/fd"
+local fd = "/usr/bin/fd"
 
 M.toggle = function(window, pane)
-
-    wezterm.log_info("called the sessioniser")
-
     local projects = {}
 
     local success, stdout, stderr = wezterm.run_child_process({
