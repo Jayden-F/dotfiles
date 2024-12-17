@@ -11,10 +11,10 @@ return {
     underline_position = -7,
 
     -- Window
-    window_background_opacity = 0.85,
+    window_background_opacity = 0.90,
     window_decorations = "TITLE | RESIZE | INTEGRATED_BUTTONS",
     colors = {
-        background = '#101010',
+        background = '#121212',
         foreground = '#ffffff',
     },
 
