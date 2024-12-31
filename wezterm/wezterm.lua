@@ -18,11 +18,12 @@ return {
         foreground = '#ffffff',
     },
 
+    -- Key Binds
     keys = {
         ---
         { key = "f", mods = "CTRL", action = wezterm.action_callback(sessionizer.toggle) },
     },
 
-
+    color_scheme = 'material',
 
 }

@@ -1,0 +1,9 @@
+font-family = "FiraCode Nerd Font Mono"
+font-style = "Retina"
+font-size = 14
+background = 121212
+foreground = ffffff
+background-opacity = 0.85
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
