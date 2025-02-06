@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-selected=$(find ~/repos  ~/Desktop -mindepth 1 -maxdepth 1 -type d -o -type l | fzf)
+selected=$(fd -HI ^.git$ --max-depth=4 --prune ~/repos --exec dirname | fzf)
 
 if [[ -z $selected ]]; then
     exit 0
