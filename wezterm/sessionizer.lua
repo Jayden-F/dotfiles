@@ -12,21 +12,16 @@ M.toggle = function(window, pane)
         fd,
         "-HI",
         "^.git$",
-        "--max-depth=4",
+        "--max-depth=6",
         "--prune",
-        os.getenv("HOME") .. "/repos"
+        os.getenv("HOME") .. "/repos",
+        "--exec",
+        "dirname",
     })
 
     if not success then
         wezterm.log_error("Failed to run fd: " .. stderr)
         return
-    end
-
-    for line in stdout:gmatch("([^\n]*)\n?") do
-        local project = line:gsub("/.git.*$", "")
-        local label = project
-        local id = project:gsub(".*/", "")
-        table.insert(projects, { label = tostring(label), id = tostring(id) })
     end
 
     window:perform_action(
