@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-selected=$(fd -HI ^.git$ --max-depth=4 --prune ~/repos --exec dirname | fzf)
+selected=$(fd -HI ^.git$ --max-depth=2 --prune ~/repos --exec dirname | fzf)
 
 if [[ -z $selected ]]; then
     exit 0
