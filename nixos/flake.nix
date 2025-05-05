@@ -6,7 +6,7 @@
         nixos-hardware.url = "github:nixos/nixos-hardware/master";
     };
 
-    outputs = { nixpkgs, nixos-hardware } :
+    outputs = { nixpkgs, nixos-hardware, ...} :
         let
             system = "x86_64-linux";
             pkgs = import nixpkgs {
