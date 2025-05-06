@@ -7,7 +7,8 @@
 {
 
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -20,7 +21,7 @@
   networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Australia/Melbourne";
@@ -56,15 +57,15 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
-fonts.packages = with pkgs; [
-        nerd-fonts.fira-code
-];
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+  ];
 
-# Define a user account. Don't forget to set a password with ‘passwd’.
+  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jaydenf = {
-  	  shell = pkgs.zsh;
-	  isNormalUser = true;
-	  extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    shell = pkgs.zsh;
+    isNormalUser = true;
+    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
 
   programs.hyprland.enable = true;
@@ -74,15 +75,15 @@ fonts.packages = with pkgs; [
   programs.thunderbird.enable = true;
 
   programs.zsh = {
-	  enable = true;
-	  enableCompletion = true;
-	  autosuggestions.enable  = true;
-	  syntaxHighlighting.enable = true;
-	  ohMyZsh = {
-		  enable = true;
-		  plugins = [];
-		  theme = "robbyrussell";
-	  };
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = [ ];
+      theme = "robbyrussell";
+    };
 
   };
   programs.neovim = { enable = true; defaultEditor = true; };
@@ -90,36 +91,37 @@ fonts.packages = with pkgs; [
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	  kitty
-	  vim
-	  wget
-	  hyprpaper
-      wofi
-      hyprlock
-      hypridle
+    kitty
+    vim
+    wget
+    hyprpaper
+    wofi
+    hyprlock
+    hypridle
 
-      git
-      neofetch
-      btop
-      ghostty
-      tmux
+    git
+    neofetch
+    btop
+    ghostty
+    tmux
 
-      ripgrep
-      fzf
-      fd
+    ripgrep
+    fzf
+    fd
 
-      zig
-      cargo
-      clang
-      gnumake
-      cmake
-      uv
+    zig
+    cargo
+    clang
+    gnumake
+    cmake
+    uv
+    go
 
-      spotify
-      discord
+    spotify
+    discord
   ];
 
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "24.11";
 
 }
 
