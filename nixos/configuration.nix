@@ -110,11 +110,22 @@
     fd
 
     zig
+    zls
+
     cargo
+    rust-analyzer
+
     clang
+    clang-tools
+    bear
     gnumake
     cmake
+
+    python313
+    basedpyright
+    ruff
     uv
+
     go
 
     spotify
