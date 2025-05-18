@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... } :
+{ } :
 {
     imports = [
         ./common.nix
@@ -7,6 +7,7 @@
         ./python.nix
         ./rust.nix
         ./zig.nix
+        ./nix.nix
     ];
 }
 

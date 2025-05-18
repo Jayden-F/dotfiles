@@ -1,18 +1,18 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ...}:
 
 {
+
+    programs.hyprland.enable = true;
+    programs.waybar.enable = true;
+
     environment.systemPackages = with pkgs; [
         kitty
-        vim
         wget
         hyprpaper
         wofi
         hyprlock
         hypridle
 
-        #other apps
-        spotify
-        discord
     ];
 
 }

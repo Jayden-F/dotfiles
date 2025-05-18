@@ -6,7 +6,6 @@
 
 {
 
-
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
     # Use the systemd-boot EFI boot loader.
@@ -67,9 +66,6 @@
         extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     };
 
-    programs.hyprland.enable = true;
-    programs.waybar.enable = true;
-
     programs.firefox.enable = true;
     programs.thunderbird.enable = true;
 
@@ -88,7 +84,6 @@
         };
 
     };
-    programs.neovim = { enable = true; defaultEditor = true; };
 
     # List packages installed in system profile. To search, run:
     # $ nix search wget

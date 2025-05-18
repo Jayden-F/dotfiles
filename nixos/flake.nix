@@ -25,6 +25,7 @@
                     ./configuration.nix
                     ./modules/packages.nix
                     ./modules/dev_tools/mod.nix
+                    ./modules/hyprland.nix
                 ];
             };
         };

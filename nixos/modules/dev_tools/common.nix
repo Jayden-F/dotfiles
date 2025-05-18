@@ -1,5 +1,8 @@
-{ config, lib, pkgs, ... } :
+{ pkgs, ... } :
 {
+
+    programs.neovim = { enable = true; defaultEditor = true; };
+
     environment.systemPackages = with pkgs; [
         neofetch
         btop
