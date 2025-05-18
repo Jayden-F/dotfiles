@@ -24,6 +24,7 @@
                     ./hardware-configuration.nix
                     ./configuration.nix
                     ./packages.nix
+                    ./dev_tools/default.nix
                 ];
             };
         };
