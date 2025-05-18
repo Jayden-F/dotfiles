@@ -23,8 +23,8 @@
                     nixos-hardware.nixosModules.framework-16-7040-amd
                     ./hardware-configuration.nix
                     ./configuration.nix
-                    ./packages.nix
-                    ./dev_tools/default.nix
+                    ./modules/packages.nix
+                    ./modules/dev_tools/mod.nix
                 ];
             };
         };
