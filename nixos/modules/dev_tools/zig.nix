@@ -1,8 +1,7 @@
 { pkgs, ... }:
 {
-    environment.systemPackages = with pkgs; [
-        zig
-        zls
-    ];
+  environment.systemPackages = with pkgs; [
+    zig
+    zls
+  ];
 }
-

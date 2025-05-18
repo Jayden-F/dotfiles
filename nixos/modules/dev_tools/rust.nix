@@ -1,8 +1,7 @@
 { pkgs, ... }:
 {
-    environment.systemPackages = with pkgs; [
-        cargo
-        rust-analyzer
-    ];
+  environment.systemPackages = with pkgs; [
+    cargo
+    rust-analyzer
+  ];
 }
-
