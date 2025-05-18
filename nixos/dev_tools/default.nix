@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ..} :
+{ config, lib, pkgs, ... } :
 {
     environment.systemPackages = with pkgs; [
         neofetch
@@ -18,6 +18,6 @@
         ./python.nix
         ./rust.nix
         ./zig.nix
-    ]
+    ];
 }
 
