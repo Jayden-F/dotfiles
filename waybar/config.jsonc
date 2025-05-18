@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["custom/nixos", "hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-left": [ "hyprland/workspaces" ],
+    "modules-center": [ "clock" ],
     "modules-right": [
         "pulseaudio",
         "backlight",
@@ -20,11 +20,6 @@
             "active": "",
             "default": ""
         }
-    },
-    "custom/nixos": {
-        "format": " ",
-        "tooltip": "NixOS",
-        "on-click": "firefox https://nixos.org"
     },
     "tray": {
         "icon-size": 21,

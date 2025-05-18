@@ -2,6 +2,7 @@ ln -s ~/repos/dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/repos/dotfiles/nvim ~/.config/
 ln -s ~/repos/dotfiles/wezterm/ ~/.config/
 ln -s ~/repos/dotfiles/waybar/ ~/.config/
+ln -s ~/repos/dotfiles/wofi/ ~/.config/
 ln -s ~/repos/dotfiles/ghostty/ ~/.config/
 ln -s ~/repos/dotfiles/hypr/ ~/.config/
 ln -s ~/repos/dotfiles/tmux/tmux.conf ~/.tmux.conf
