@@ -7,6 +7,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    gdb
+    direnv
     neofetch
     btop
     ghostty

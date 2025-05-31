@@ -1,10 +1,9 @@
 { pkgs, ... }:
 
 {
+  hardware.keyboard.zsa.enable = true;
   environment.systemPackages = with pkgs; [
-    spotify
-    discord
-    google-chrome
+    keymapp
   ];
 
 }

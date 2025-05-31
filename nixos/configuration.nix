@@ -16,7 +16,6 @@
     "flakes"
   ];
 
-  # Use the systemd-boot EFI boot loader.
 
   boot.kernelParams = [ "amdgpu.dcdebugmask=0x410" ];
   boot.loader.systemd-boot.enable = true;
@@ -73,7 +72,6 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
 
-  programs.firefox.enable = true;
   programs.thunderbird.enable = true;
 
   programs.zsh = {
