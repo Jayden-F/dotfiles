@@ -12,6 +12,7 @@
     wofi
     hyprlock
     hypridle
+    hyprshot
   ];
 
 }
