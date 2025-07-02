@@ -4,6 +4,7 @@ ln -s ~/repos/dotfiles/wezterm/ ~/.config/
 ln -s ~/repos/dotfiles/waybar/ ~/.config/
 ln -s ~/repos/dotfiles/wofi/ ~/.config/
 ln -s ~/repos/dotfiles/ghostty/ ~/.config/
+ln -s ~/repos/dotfiles/tmux-sessionizer/ ~/.config/
 ln -s ~/repos/dotfiles/hypr/ ~/.config/
 ln -s ~/repos/dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/repos/dotfiles/alacritty/alacritty.toml  ~/.alacritty.toml
