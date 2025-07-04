@@ -8,8 +8,6 @@
 
   environment.systemPackages = with pkgs; [
     gdb
-    direnv
-    neofetch
     btop
     ghostty
     tmux
@@ -17,8 +15,6 @@
     ripgrep
     fzf
     fd
-    tree-sitter
-    nodejs
     linuxPackages_latest.perf
   ];
 
