@@ -6,9 +6,9 @@
     "modules-right": [
         "pulseaudio",
         "backlight",
+        "network",
         "cpu",
         "memory",
-        "network",
         "battery",
         "tray",
         "custom/lock",
@@ -37,7 +37,7 @@
     "clock": {
         "timezone": "Australia/Melbourne",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%d/%m/%Y - %H:%M:%S}"
+        "format": "{:%d/%m - %H:%M}"
     },
     "network": {
         "format-wifi": "󰤢 {bandwidthDownBits}",

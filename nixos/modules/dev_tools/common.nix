@@ -17,6 +17,8 @@
     ripgrep
     fzf
     fd
+    tree-sitter
+    nodejs
     linuxPackages_latest.perf
   ];
 
