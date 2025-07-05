@@ -5,14 +5,10 @@
     "modules-center": [ "clock" ],
     "modules-right": [
         "pulseaudio",
-        "backlight",
         "network",
         "cpu",
         "memory",
         "battery",
-        "tray",
-        "custom/lock",
-        "custom/power"
     ],
     "hyprland/workspaces": {
         "format": "{name}: {icon}",
@@ -20,10 +16,6 @@
             "active": "",
             "default": ""
         }
-    },
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
     },
     "custom/music": {
         "format": "  {}",
@@ -63,11 +55,6 @@
         },
         "on-click": "pavucontrol"
     },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-       "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
     "battery": {
         "interval" : 60,
         "states": {
@@ -85,7 +72,7 @@
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "shutdown -h now",
         "format": "⏻"
     }
 }

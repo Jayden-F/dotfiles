@@ -8,7 +8,7 @@
 
 #waybar {
   background: transparent;
-  color: #c6d0f5;
+  color: #99e6ff;
 }
 
 #workspaces {
@@ -47,7 +47,6 @@
 }
 
 #clock {
-  color: #8caaee;
   border-radius: 5px;
   margin-right: 1rem;
   border-radius: 0px 0px 5px 5px;
