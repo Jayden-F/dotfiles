@@ -16,7 +16,6 @@
     "flakes"
   ];
 
-
   boot.kernelParams = [ "amdgpu.dcdebugmask=0x410" ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -25,6 +24,11 @@
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+
+  # Blue tooth settings
+  services.blueman.enable = true;
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   # Set your time zone.
   time.timeZone = "Australia/Melbourne";
@@ -47,7 +51,8 @@
 
   # Configure keymap in X11
   services.xserver.xkb.layout = "us";
-  services.xserver.xkb.options = "caps:escape"; # Enable CUPS to print documents.
+  services.xserver.xkb.options = "caps:escape";
+  # Enable CUPS to print documents.
   # services.printing.enable = true;
 
   # Enable sound.

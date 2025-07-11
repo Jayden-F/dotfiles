@@ -9,18 +9,18 @@
     { nixpkgs, nixos-hardware, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
     in
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit system;
-          inherit pkgs;
-        };
         modules = [
+
+          (
+            { config, ... }:
+            {
+              nixpkgs.config.allowUnfree = true;
+            }
+          )
+
           nixos-hardware.nixosModules.framework-16-7040-amd
           ./hardware-configuration.nix
           ./configuration.nix
