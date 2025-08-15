@@ -5,6 +5,7 @@
     "modules-center": [ "clock" ],
     "modules-right": [
         "pulseaudio",
+        "backlight",
         "network",
         "cpu",
         "memory",
@@ -54,6 +55,11 @@
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "interval" : 60,

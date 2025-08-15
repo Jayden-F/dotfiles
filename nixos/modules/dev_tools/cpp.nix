@@ -3,8 +3,9 @@
   environment.systemPackages = with pkgs; [
     clang
     clang-tools
-    bear
     gnumake
+    gtest
     cmake
+    neocmakelsp
   ];
 }

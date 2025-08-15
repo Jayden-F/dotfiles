@@ -7,15 +7,16 @@
   };
 
   environment.systemPackages = with pkgs; [
-    gdb
     btop
-    ghostty
-    tmux
-    git
-    ripgrep
-    fzf
     fd
+    fzf
     linuxPackages_latest.perf
+    gdb
+    git
+    ghostty
+    lazygit
+    ripgrep
+    tmux
   ];
 
   imports = [
